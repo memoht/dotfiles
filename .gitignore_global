@@ -1,0 +1,65 @@
+#
+# [ Install ]
+#
+#   $ git config --global --add core.excludesfile ~/.gitignore
+#
+
+# Credentials
+.gem/credentials
+.gnupg/
+.ssh/
+
+# OS X System files
+.DS_Store
+lost+found/
+!.keep
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+
+# Compiler artifacts
+*.o
+*.a
+*.so
+*.rbc
+.rbx/
+
+# Package files
+*.tar.gz
+*.tar.bz2
+*.gem
+
+# Project files
+CMakeFiles/
+CMakeCache.txt
+
+# Ruby project files
+.bundle
+.rbenv-version
+.config
+coverage
+
+# Editor backup files
+*~
+*.bak
+.*.sw*
+
+# Documentation files
+.rdoc
+.yardoc
+
+# Vagrant
+.vagrant
+
+#Chgem folders
+.gem/
+
+#heroku
+.env

@@ -1,0 +1,20 @@
+[user]
+  name = james kirk
+  email = james.kirk@starfleet.org
+
+[github]
+  user = jtkirk
+
+[core]
+  excludesfile = /Users/jtkirk/.gitignore_global
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[format]
+  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+[heroku]
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
