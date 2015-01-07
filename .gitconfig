@@ -12,9 +12,19 @@
   branch = auto
   diff = auto
   status = auto
+[color "branch"]
+  current = yellow reverse
+  local   = yellow
+  remote  = green
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = blue
+
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [heroku]
 [filter "media"]
-  clean = git-media-clean %f
-  smudge = git-media-smudge %f
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f

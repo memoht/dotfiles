@@ -34,13 +34,14 @@ alias bers='bundle exec rspec'
 #Projects
 #http://stackoverflow.com/questions/16199581/opening-sublime-text-on-command-line-as-subl-on-mac-os
 #sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/bin/subl
-alias brownbox='cd ~/Sites/brownbox && chgems'
-alias chasingb='cd ~/Sites/chasingb && chgems'
-alias ppipub='cd ~/Sites/ppipub && chgems'
-alias jofiusa='cd ~/Sites/jofiusa && chgems'
-alias tibethgs='cd ~/Sites/tibethgs && chgems'
-alias jofi.us='cd ~/Sites/jofius && chgems'
-alias jobfinderusa='cd ~/Sites/jobfinderusa && chgems'
+alias brownbox='cd ~/Sites/brownbox && gem_home .'
+alias chasingb='cd ~/Sites/chasingb && gem_home .'
+alias ppipub='cd ~/Sites/ppipub && gem_home .'
+alias jofiusa='cd ~/Sites/jofiusa && gem_home .'
+alias tibethgs='cd ~/Sites/tibethgs && gem_home .'
+alias jofi.us='cd ~/Sites/jofius && gem_home .'
+alias jobfinderusa='cd ~/Sites/jobfinderusa && gem_home .'
+alias myflix='cd ~/Sites/myflix && gem_home .'
 
 #Redis
 alias redisup='redis-server /usr/local/etc/redis.conf'
