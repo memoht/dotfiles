@@ -9,8 +9,8 @@ source /usr/local/share/gem_home/gem_home.sh
 # chruby ruby-2.1.3
 
 #http://postgresapp.com
-#PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
+#PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
