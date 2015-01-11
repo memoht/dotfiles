@@ -8,14 +8,14 @@ alias gd='git diff'
 alias gdh='git diff HEAD'
 
 # Postgres Backups
-alias ppipub_dump='pg_dump -Fc --no-acl --no-owner -h localhost ppipub_development > ppilocal.dump'
-alias tibethgs_dump='pg_dump -Fc --no-acl --no-owner -h localhost tibethgs_development > tibethgs.dump'
-alias jofiusa_dump='pg_dump -Fc --no-acl --no-owner -h localhost jofiusa_development > jofiusalocal.dump'
-alias ppipub_restore='pg_restore --verbose --clean --no-acl --no-owner -h localhost -d ppipub_development heroku.dump'
-alias jofiusa_restore='pg_restore --verbose --clean --no-acl --no-owner -h localhost -d jofiusa_development heroku.dump'
-alias tibethgs_restore='pg_restore --verbose --clean --no-acl --no-owner -h localhost -d tibethgs_development heroku.dump'
-alias chasingb_restore='pg_restore --verbose --clean --no-acl --no-owner -h localhost -d chasingb_development heroku.dump'
-alias jofi.us_restore='pg_restore --verbose --clean --no-acl --no-owner -h localhost -d jofius_development heroku.dump'
+alias ppipub_dump='pg_dump -Fc --no-acl --no-owner -h localhost ppipub_dev > ppilocal.dump'
+alias tibethgs_dump='pg_dump -Fc --no-acl --no-owner -h localhost tibethgs_dev > tibethgs.dump'
+alias jofiusa_dump='pg_dump -Fc --no-acl --no-owner -h localhost jofiusa_dev > jofiusalocal.dump'
+alias ppipub_restore='pg_restore --verbose --clean --no-acl --no-owner -h localhost -d ppipub_dev heroku.dump'
+alias jofiusa_restore='pg_restore --verbose --clean --no-acl --no-owner -h localhost -d jofiusa_dev heroku.dump'
+alias tibethgs_restore='pg_restore --verbose --clean --no-acl --no-owner -h localhost -d tibethgs_dev heroku.dump'
+alias chasingb_restore='pg_restore --verbose --clean --no-acl --no-owner -h localhost -d chasingb_dev heroku.dump'
+alias jofi.us_restore='pg_restore --verbose --clean --no-acl --no-owner -h localhost -d jofius_dev heroku.dump'
 
 #Heroku
 alias capture='heroku pgbackups:capture --expire && curl -o heroku.dump `heroku pgbackups:url`'
