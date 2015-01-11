@@ -6,7 +6,7 @@
   user = jtkirk
 
 [core]
-  excludesfile = /Users/jtkirk/.gitignore_global
+  excludesfile = /Users/jtkirk/.gitignore
 
 [color]
   branch = auto
