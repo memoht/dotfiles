@@ -5,8 +5,10 @@
 [github]
   user = jtkirk
 
-[core]
-  excludesfile = /Users/jtkirk/.gitignore
+[filter "media"]
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
 
 [color]
   branch = auto
@@ -20,11 +22,12 @@
   added = yellow
   changed = green
   untracked = blue
-
-[format]
-  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
-[heroku]
-[filter "media"]
+[filter "hawser"]
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
   required = true
-  clean = git media clean %f
-  smudge = git media smudge %f
+[filter "lfs"]
+  clean = git lfs clean %f
+  smudge = git lfs smudge %f
+  required = true
+
