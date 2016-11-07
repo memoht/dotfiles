@@ -6,11 +6,11 @@ source /usr/local/share/chruby/auto.sh
 source /usr/local/share/gem_home/gem_home.sh
 
 # turn next line on after installing chruby
-# chruby ruby-2.1.3
+# chruby ruby-2.3.1
 
 #http://postgresapp.com
-#PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+#PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
