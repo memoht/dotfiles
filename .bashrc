@@ -3,10 +3,10 @@ source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
 #https://github.com/postmodern/gem_home
-source /usr/local/share/gem_home/gem_home.sh
+#source /usr/local/share/gem_home/gem_home.sh
 
 # turn next line on after installing chruby
-# chruby ruby-2.3.1
+# chruby ruby-2.5.0
 
 #http://postgresapp.com
 #PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
