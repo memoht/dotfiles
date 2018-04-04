@@ -2,14 +2,10 @@
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
-#https://github.com/postmodern/gem_home
-#source /usr/local/share/gem_home/gem_home.sh
-
 # turn next line on after installing chruby
-# chruby ruby-2.5.0
+# chruby ruby-2.5.1
 
 #http://postgresapp.com
-#PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 # Added by the Heroku Toolbelt
@@ -34,3 +30,9 @@ done
 # other method to include just .bash_aliases
 # https://github.com/telemachus/dotfiles/blob/master/bashrc
 # [[ -f $HOME/.bash_aliases ]] && source $HOME/.bash_aliases
+
+# http://guides.rubygems.org/faqs/
+if which ruby >/dev/null && which gem >/dev/null; then
+    PATH="$(ruby -e 'puts Gem.user_dir')/bin:$PATH"
+fi
+export PATH="$(brew --prefix qt@5.5)/bin:$PATH"

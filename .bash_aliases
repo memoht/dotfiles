@@ -9,9 +9,7 @@ alias gdh='git diff HEAD'
 
 # Postgres Backups
 alias ppipub_dump='pg_dump -Fc --no-acl --no-owner -h localhost ppipub_dev > ppilocal.dump'
-alias tibethgs_dump='pg_dump -Fc --no-acl --no-owner -h localhost tibethgs_dev > tibethgs.dump'
 alias ppipub_restore='pg_restore --verbose --clean --no-acl --no-owner -h localhost -d ppipub_dev heroku.dump'
-alias tibethgs_restore='pg_restore --verbose --clean --no-acl --no-owner -h localhost -d tibethgs_dev heroku.dump'
 alias ppipub_capture='heroku pg:backups capture --app ppipub && curl -o heroku.dump `heroku pg:backups public-url`'
 alias redis_heroku='redis-cli -h redis-xxxxxx.cloud.redislabs.com -p 16671 -a xxxxxxxx'
 
@@ -28,6 +26,8 @@ alias console="rails console"
 alias taildev='tail -f log/development.log'
 alias tailtest='tail -f log/test.log'
 alias bers='bundle exec rspec'
+alias editcreds='EDITOR="atom --wait" bin/rails credentials:edit'
+
 
 #Projects
 #http://stackoverflow.com/questions/16199581/opening-sublime-text-on-command-line-as-subl-on-mac-os
