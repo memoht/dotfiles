@@ -17,6 +17,8 @@ HISTFILESIZE=3000
 HISTCONTROL=ignoreboth
 # append to the history file, don't overwrite it
 shopt -s histappend
+# Erase duplicates in history
+export HISTCONTROL=erasedups
 
 # make sure to use UTF-8 always, everywhere
 export LC_CTYPE=en_US.UTF-8
